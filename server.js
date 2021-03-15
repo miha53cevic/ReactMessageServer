@@ -7,7 +7,7 @@ const { PORT } = require('./data/config.json')
 
 app.use(cors({origin: true}));
 app.get('/', (req, res) => {
-    res.send('<h1>Hello world</h1>');
+    res.send(`<h1>${port}</h1>`);
 });
 
 let users = [];
