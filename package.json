@@ -1,0 +1,19 @@
+{
+  "name": "reactmessageserver",
+  "version": "1.0.0",
+  "description": "Backend for ReactMessage",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [
+    "webrtc"
+  ],
+  "author": "miha53cevic",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "socket.io": "^4.0.0"
+  }
+}
