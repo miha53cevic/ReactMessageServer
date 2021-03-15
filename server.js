@@ -42,7 +42,7 @@ io.on('connect', socket => {
     });
 });
 
-const port = process.env.PORT | PORT;
+const port = process.env.PORT === undefined ? PORT : process.env.PORT;
 http.listen(port, () => {
     console.log(`Running on port ${port}`);
 });
