@@ -42,4 +42,7 @@ io.on('connect', socket => {
     });
 });
 
-http.listen(PORT);
+const port = process.env.PORT | PORT;
+http.listen(port, () => {
+    console.log(`Running on port ${port}`);
+});
